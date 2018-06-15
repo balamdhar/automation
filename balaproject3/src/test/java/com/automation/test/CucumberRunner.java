@@ -31,7 +31,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		monochrome = true, 
 		features = "./features",
 		glue = "com.automation.test.stepdefinition",
-		plugin = {"pretty", "html:target/cucumber-html-report" },
+		plugin = {"pretty", "html:target/cucumber-html-report","json:target/cucumber3.json" },
 		tags={"@Regression,@JunitScenario,@TestngScenario"})
 
 public class CucumberRunner extends AbstractTestNGCucumberTests {
